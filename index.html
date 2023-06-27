@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/agenda.png" alt="agenda">
+            <h1>Agenda de Contatos</h1>
+        </header>
+         <h3>Insira um novo contato:</h3>
+        <form id="form-agenda">
+           <input type="text" id="nome-contato" required placeholder="Nome do Contato">
+           <input type="text" id="numero-contato" required placeholder="(28)9999-9999">
+           <select name="tipo-contato" id="tipo-contato">
+            <option value="">Escolha o tipo de contato</option>
+            <option value="" id="Residencial">Residencial</option>
+            <option value="" id="Comercial">Comercial</option>
+           </select>
+           <button type="submit">Salvar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Número do contato</th>
+                    <th>Tipo de Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
